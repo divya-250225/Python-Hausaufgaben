@@ -1,0 +1,65 @@
+print("Enter two numbers to add")#quotation marks are nescessary
+a= int(input("Enter the first number = "))
+b= int(input("Enter the second number = "))
+print (a+b)#functions work without quotation marks
+
+print()
+
+print("To calculate the area of the rectangle, provide the length and width")
+L= int(input("Enter the length = "))
+W= int(input("Enter the width = "))# int is used for number
+print (L*W)
+
+print()#works for blank line
+
+print ("Lets Find Your Age!")
+BY= int(input("Enter Your Birth Year = "))
+CY= int(input("Enter The Current Year = "))
+print("You are",CY-BY, "years old!")# add comma if and seperate the func and text
+
+print()
+
+Name = input("Hi user, enter your name - ")
+print("Hi",Name,",Willkommen")#add quotation marks when seperated by a function
+
+print()
+
+print("Lets calculate simple interest!!")
+P= int(input("Enter the principal= "))
+r= int(input("Enter the rate= "))
+t= int(input("Enter the time period= "))
+print("Your interest amount is",P*r*t/100,".")# make sure formulas are correct!!
+
+print()
+
+print("Celcius to Farhenheit Calculator")
+C= int(input("Enter the temperature in celcius = "))
+print ("The temperature in fahrenheit is", C*9/5+32 )
+
+print()
+
+print("Minutes to Hours Calculator")
+M= int(input("Enter minutes = "))
+print ("The time in hours is", M/60 )
+
+print()# this is added to make and enter effect
+
+print("Perimeter of a square finder!!")
+S= int(input("Enter the value of one side= "))
+print ("The perimeter is", S*S)
+
+print()
+
+print("Enter two numbers to muliply")
+a= int(input("enter the first number = "))
+b= int(input("enter the second number = "))
+print (a*b)
+
+print()
+
+print("Calculting average of three numbers")
+a= int(input("enter the first number = "))
+b= int(input("enter the second number = "))
+c= int(input("enter the third number = "))
+print (a+b+c/3)
+
