@@ -1,0 +1,78 @@
+print ("Find if the number is positive negetive or zero")
+a=int(input("Enter number: "))
+if(a==0): 
+        print("The number is zero")
+elif(a<0):
+        print ("The number is negetive ")
+else:
+        print("The number is positive")
+print()
+print("What day is it with numbers")
+a = int(input("Enter number: "))
+
+match a:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case 4:
+        print("Thursday")
+    case 5:
+        print("Friday")
+    case 6:
+        print("Saturday")
+    case 7:
+        print("Sunday")   
+print()
+print ("What your grade means")
+a=int()
+grade= input("Enter the alphabet :")
+match grade.upper(): #remember the parentheses
+    case 'A':
+        print("Excellent")
+    case'B':
+        print ("Very good")
+    case'C':
+        print ("Average")
+    case 'D':
+        print("Below Average")
+    case 'D-':
+        print("Pass")
+    case 'F':
+        print("Fail")
+print()
+print("FInd the largest number")
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+c=int(input("Enter the third number: "))
+if a >= b and a >= c:
+    print("The first number is greater.")
+elif b >= a and b >= c:
+    print("The second number is greater.")
+else:
+    print("The third number is greater.")
+print()
+print("Simple calculator")
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+print("Choose an operation:")
+print("1. Add (+)")
+print("2. Subtract (-)")
+print("3. Multiply (*)")
+print("4. Divide (/)")
+choice = input("Enter your choice (1/2/3/4): ")
+if choice == '1':
+    print("Result:", num1 + num2)
+elif choice == '2':
+    print("Result:", num1 - num2)
+elif choice == '3':
+    print("Result:", num1 * num2)
+elif choice == '4':
+    if num2 != 0:
+        print("Result:", num1 / num2)
+else:
+    print("Error: Cannot divide by zero")
+
+**
