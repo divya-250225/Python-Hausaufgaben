@@ -1,0 +1,58 @@
+a = 1
+while a <= 100:
+    print(a)
+    a += 1
+print()
+for b in range(2, 51, 2):
+    print(b)
+print()
+correct_password = "divi@2502"
+password = ""
+while password != correct_password:
+    password = input("Enter password: ")
+print("Access granted.")
+print()
+a= int(input("Enter a number: "))
+if a % 3 == 0 and a % 5 == 0:
+    print("The number is divisible by both 3 and 5.")
+print()
+a= int(input("Enter a number: "))
+if a % 3 == 0 or a % 5 == 0:
+    print("The number is divisible by 3 or 5.")
+print()
+a= int(input("Enter a number: "))
+if not a % 2 == 0:
+    print("The number is not divisible by 2 (it's odd).")
+print()    
+char = input("Enter a single letter: ").lower()
+match char:
+    case 'a','e','i','o','u':
+        print("It is a vowel.")
+    case _:
+        print("It is a consonant.")
+print()
+month_num = int(input("Enter a month number (1-12): "))
+match month_num:
+    case 1: print("January")
+    case 2: print("February")
+    case 3: print("March")
+    case 4: print("April")
+    case 5: print("May")
+    case 6: print("June")
+    case 7: print("July")
+    case 8: print("August")
+    case 9: print("September")
+    case 10: print("October")
+    case 11: print("November")
+    case 12: print("December")
+    case _: print("Invalid month number.")
+print()
+total = 0
+for i in range(5):
+    num = int(input(f"Enter number {i+1}: "))
+    total += num
+print("Total sum is:", total)
+print()
+num = int(input("Enter a number for its multiplication table: "))
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
