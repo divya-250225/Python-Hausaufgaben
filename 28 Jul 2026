@@ -1,0 +1,103 @@
+# 1. Create a list of 5 numbers and print the sum.
+numbers = [10, 20, 30, 40, 50]
+print("Sum:", sum(numbers))
+
+# 2. Remove all duplicates from a list and print the result.
+nums_with_duplicates = [1, 2, 2, 3, 4, 4, 5]
+no_duplicates = list(set(nums_with_duplicates))
+print("No duplicates:", no_duplicates)
+
+# 3. Sort a list in descending order and print the top 3 values.
+values = [15, 42, 7, 23, 89, 2]
+values.sort(reverse=True)
+print("Top 3 values:", values[:3])
+
+# 4. Count how many times each element appears in a list.
+items = ['apple', 'banana', 'apple', 'cherry', 'banana', 'banana']
+counts = {}
+for item in items:
+    counts[item] = counts.get(item, 0) + 1
+print("Frequencies:", counts)
+
+# 5. Given a list of names, print all names that start with the letter 'A'.
+names = ['Ana', 'Vera', 'Amanda', 'Charles', 'Alisa']
+a_names = [name for name in names if name.startswith('A')]
+print("Names starting with A:", a_names)
+
+# 1. Create a tuple of 3 fruits and print the second fruit.
+fruits = ('apple', 'banana', 'cherry')
+print("Second fruit:", fruits[1])
+
+# 2. Convert a tuple to a list, add an element, and convert it back to a tuple.
+fruit_list = list(fruits)
+fruit_list.append('orange')
+fruits = tuple(fruit_list)
+print("Updated tuple:", fruits)
+
+# 3. Find the index of a specific value in a tuple.
+index = fruits.index('banana')
+print("Index of 'banana':", index)
+
+# 4. Given a tuple of numbers, find the smallest and largest values.
+numbers = (4, 7, 1, 9, 2)
+print("Smallest:", min(numbers))
+print("Largest:", max(numbers))
+
+# 5. Given a list of tuples with names and scores, print the name with the highest score.
+scores = [('Alice', 88), ('Bob', 92), ('Charlie', 85)]
+top_scorer = max(scores, key=lambda x: x[1])
+
+# 1. Create a set of colors and check if a specific color exists in the set.
+colors = {'red', 'green', 'blue'}
+print("Is 'green' in colors?", 'green' in colors)
+
+# 2. Find common elements between two sets.
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+common = set1 & set2
+print("Common elements:", common)
+
+# 3. Add and remove elements from a set.
+colors.add('yellow')
+colors.discard('blue')
+print("Updated colors:", colors)
+
+# 4. Remove duplicates from a list using a set.
+list_with_duplicates = [1, 2, 2, 3, 4, 4, 5]
+unique = list(set(list_with_duplicates))
+print("Unique values:", unique)
+
+# 5. Perform union, intersection, and difference on two sets of numbers.
+a = {1, 2, 3}
+b = {3, 4, 5}
+print("Union:", a | b)
+print("Intersection:", a & b)
+print("Difference (a - b):", a - b)
+# 1. Create a dictionary with a person's name and age, and print the age.
+person = {'name': 'Alice', 'age': 30}
+print("Age:", person['age'])
+
+# 2. Add a new key-value pair to a dictionary and update an existing one.
+person['city'] = 'New York'
+person['age'] = 31
+print("Updated person:", person)
+
+# 3. Loop through a dictionary and print each key and value.
+for key, value in person.items():
+    print(f"{key}: {value}")
+
+# 4. Count the frequency of each character in a string using a dictionary.
+text = "hello world"
+char_freq = {}
+for char in text:
+    if char != ' ':
+        char_freq[char] = char_freq.get(char, 0) + 1
+print("Character frequencies:", char_freq)
+
+# 5. Given a dictionary of product names and prices, print the name of the most expensive product.
+products = {'Laptop': 1200, 'Phone': 800, 'Tablet': 450}
+most_expensive = max(products, key=products.get)
+print("Most expensive product:", most_expensive)
+
+print("Top scorer:", top_scorer[0])
+
